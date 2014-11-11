@@ -58,6 +58,23 @@
 
 
 
+     // To add the marker to the map, use the 'map' property
+          var marker = new google.maps.Marker(markerOptions);
+
+        //starbucks
+          var joesPosition = new google.maps.LatLng(40.72911,-73.991645);
+
+          var joesPubMarkerOptions = {
+              position: joesPosition,
+              map: map,
+              title:"Hello joe joe",
+              icon: 'https://pbs.twimg.com/profile_images/502516986555822080/9PrJOJKH_normal.jpeg' //url to images
+          };
+
+          // To add the marker to the map, use the 'map' property
+          var joesMarker = new google.maps.Marker(joeMarkerOptions);
+
+
       }
 
       google.maps.event.addDomListener(window, 'load', initialize);
